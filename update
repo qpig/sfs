@@ -1,0 +1,4 @@
+#!/bin/sh
+find ./* -name "*.c" -o -name "*.S" -o -name "*.s" -o -name "*.h"> cscope.files
+cscope -Rbkq -i cscope.files
+ctags -R
